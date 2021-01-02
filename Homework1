@@ -1,0 +1,12 @@
+#karışık listedeki elemanların kaçar tane olduğunu sözlük sayesinde bulmuş olduk.
+
+
+def explanation(x):
+    a = list.count(x)
+    return(f"{a} tane bulunmaktadır.")
+
+list = [1,4,7,7,7,1,2.5,3,3,3,3,7,8,4,1,4,4]
+
+sözlük = {x:explanation(x) for x in list}
+
+print(sözlük)
